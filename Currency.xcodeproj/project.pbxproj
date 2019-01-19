@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		87DCE99A21F0D892009BB5BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCE99921F0D892009BB5BC /* AppDelegate.swift */; };
-		87DCE99C21F0D892009BB5BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCE99B21F0D892009BB5BC /* ViewController.swift */; };
-		87DCE99F21F0D892009BB5BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DCE99D21F0D892009BB5BC /* Main.storyboard */; };
 		87DCE9A121F0D895009BB5BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87DCE9A021F0D895009BB5BC /* Assets.xcassets */; };
 		87DCE9A421F0D895009BB5BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87DCE9A221F0D895009BB5BC /* LaunchScreen.storyboard */; };
 		87DCE9AF21F0D895009BB5BC /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCE9AE21F0D895009BB5BC /* CurrencyTests.swift */; };
+		87DCE9BD21F24DC6009BB5BC /* CurrencyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCE9BB21F24DC6009BB5BC /* CurrencyListViewController.swift */; };
+		87DCE9BE21F24DC6009BB5BC /* CurrencyListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87DCE9BC21F24DC6009BB5BC /* CurrencyListViewController.xib */; };
+		87DCE9C221F3DC81009BB5BC /* ServiceSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCE9C121F3DC81009BB5BC /* ServiceSetup.swift */; };
+		87DCE9C421F3DE18009BB5BC /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCE9C321F3DE18009BB5BC /* Service.swift */; };
+		87DCE9C621F3E56B009BB5BC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCE9C521F3E56B009BB5BC /* Result.swift */; };
+		87DCE9C821F3E590009BB5BC /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DCE9C721F3E590009BB5BC /* ServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +32,18 @@
 /* Begin PBXFileReference section */
 		87DCE99621F0D892009BB5BC /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DCE99921F0D892009BB5BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87DCE99B21F0D892009BB5BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		87DCE99E21F0D892009BB5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87DCE9A021F0D895009BB5BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87DCE9A321F0D895009BB5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87DCE9A521F0D895009BB5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87DCE9AA21F0D895009BB5BC /* CurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DCE9AE21F0D895009BB5BC /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
 		87DCE9B021F0D895009BB5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87DCE9BB21F24DC6009BB5BC /* CurrencyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListViewController.swift; sourceTree = "<group>"; };
+		87DCE9BC21F24DC6009BB5BC /* CurrencyListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyListViewController.xib; sourceTree = "<group>"; };
+		87DCE9C121F3DC81009BB5BC /* ServiceSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceSetup.swift; sourceTree = "<group>"; };
+		87DCE9C321F3DE18009BB5BC /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		87DCE9C521F3E56B009BB5BC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		87DCE9C721F3E590009BB5BC /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,9 @@
 		87DCE99821F0D892009BB5BC /* Currency */ = {
 			isa = PBXGroup;
 			children = (
-				87DCE99921F0D892009BB5BC /* AppDelegate.swift */,
-				87DCE99B21F0D892009BB5BC /* ViewController.swift */,
-				87DCE99D21F0D892009BB5BC /* Main.storyboard */,
-				87DCE9A021F0D895009BB5BC /* Assets.xcassets */,
-				87DCE9A221F0D895009BB5BC /* LaunchScreen.storyboard */,
-				87DCE9A521F0D895009BB5BC /* Info.plist */,
+				87DCE9C021F3DC5D009BB5BC /* Service */,
+				87DCE9BA21F24CBA009BB5BC /* Scenes */,
+				87DCE9B921F24B96009BB5BC /* Supporting Files */,
 			);
 			path = Currency;
 			sourceTree = "<group>";
@@ -94,6 +99,45 @@
 				87DCE9B021F0D895009BB5BC /* Info.plist */,
 			);
 			path = CurrencyTests;
+			sourceTree = "<group>";
+		};
+		87DCE9B921F24B96009BB5BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87DCE99921F0D892009BB5BC /* AppDelegate.swift */,
+				87DCE9A521F0D895009BB5BC /* Info.plist */,
+				87DCE9A221F0D895009BB5BC /* LaunchScreen.storyboard */,
+				87DCE9A021F0D895009BB5BC /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87DCE9BA21F24CBA009BB5BC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				87DCE9BF21F2599C009BB5BC /* Currency List */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		87DCE9BF21F2599C009BB5BC /* Currency List */ = {
+			isa = PBXGroup;
+			children = (
+				87DCE9BB21F24DC6009BB5BC /* CurrencyListViewController.swift */,
+				87DCE9BC21F24DC6009BB5BC /* CurrencyListViewController.xib */,
+			);
+			path = "Currency List";
+			sourceTree = "<group>";
+		};
+		87DCE9C021F3DC5D009BB5BC /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				87DCE9C121F3DC81009BB5BC /* ServiceSetup.swift */,
+				87DCE9C321F3DE18009BB5BC /* Service.swift */,
+				87DCE9C521F3E56B009BB5BC /* Result.swift */,
+				87DCE9C721F3E590009BB5BC /* ServiceError.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +222,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				87DCE9A421F0D895009BB5BC /* LaunchScreen.storyboard in Resources */,
+				87DCE9BE21F24DC6009BB5BC /* CurrencyListViewController.xib in Resources */,
 				87DCE9A121F0D895009BB5BC /* Assets.xcassets in Resources */,
-				87DCE99F21F0D892009BB5BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +241,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87DCE99C21F0D892009BB5BC /* ViewController.swift in Sources */,
+				87DCE9C821F3E590009BB5BC /* ServiceError.swift in Sources */,
+				87DCE9BD21F24DC6009BB5BC /* CurrencyListViewController.swift in Sources */,
+				87DCE9C621F3E56B009BB5BC /* Result.swift in Sources */,
+				87DCE9C421F3DE18009BB5BC /* Service.swift in Sources */,
 				87DCE99A21F0D892009BB5BC /* AppDelegate.swift in Sources */,
+				87DCE9C221F3DC81009BB5BC /* ServiceSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +269,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		87DCE99D21F0D892009BB5BC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				87DCE99E21F0D892009BB5BC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		87DCE9A221F0D895009BB5BC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Currency/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Currency/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Currency/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Currency/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
